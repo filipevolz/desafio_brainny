@@ -1,0 +1,19 @@
+{
+	"React Component With Folder Name": {
+		"prefix": "rnch",
+		"body": [
+			"import React from \"react\";",
+			"import { Flex, Text } from \"@chakra-ui/react\";",
+			"",
+			"export const ${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/} = () => {",
+			"  return (",
+			"    <Flex>",
+			"      <Text>${TM_DIRECTORY/^.+[\\\\/\\\\\\\\]+(.*)$/$1/}</Text>",
+			"    </Flex>",
+			"  );",
+			"}",
+			""
+		],
+		"description": ""
+	},
+}
