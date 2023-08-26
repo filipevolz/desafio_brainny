@@ -1,0 +1,14 @@
+overwrite: true
+schema: ${NEXT_PUBLIC_API_URL}
+documents: "src/**/*.graphql"
+generates:
+  src/generated/graphql.tsx:
+    - typescript
+  src/generated/:
+    preset: near-operation-file
+    presetConfig:
+      extension: .generated.tsx
+      baseTypesPath: graphql.tsx
+    plugins:
+      - typescript-operations
+      - typescript-react-apollo
