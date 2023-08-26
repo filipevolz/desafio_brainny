@@ -1,0 +1,13 @@
+fragment MeFields on UsersPermissionsMe {
+    id
+    username
+    email
+    confirmed
+    blocked
+    role{
+      id
+      name
+      description
+      type
+    }
+}
