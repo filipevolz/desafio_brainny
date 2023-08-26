@@ -2,7 +2,8 @@
 
 import { CacheProvider } from "@chakra-ui/next-js"
 import { ChakraProvider } from "@chakra-ui/react"
-import Apollo from "src/common/apollo"
+import ApolloProvider from "src/common/apollo"
+import { AuthProvider } from "src/features/auth/context/UserAuthContext"
 
 interface ProviderProps {
   children: React.ReactNode
@@ -11,13 +12,15 @@ interface ProviderProps {
 const Providers = ({ children }: ProviderProps) => {
 
   return (
-    <Apollo>
-      <CacheProvider>
-        <ChakraProvider>
-          {children}
-        </ChakraProvider>
-      </CacheProvider>
-    </Apollo>
+    <ApolloProvider>
+      <AuthProvider>
+        <CacheProvider>
+          <ChakraProvider>
+            {children}
+          </ChakraProvider>
+        </CacheProvider>
+      </AuthProvider>
+    </ApolloProvider>
   )
 }
 
