@@ -1,0 +1,45 @@
+:root {
+
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background-color: #330693;
+  background-image: url("/bgLanding.svg");
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+span {
+  color: #8A53FF;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-horizontal {
+  width: 913px;
+}
+
+.swiper-slide-next {
+  left: -50px;
+  opacity: 0.5;
+  height: 400px;
+}
+.swiper-slide-prev {
+  right: -50px;
+  opacity: 0.5;
+  height: 400px;
+}

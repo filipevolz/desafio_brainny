@@ -1,0 +1,9 @@
+fragment RegisterTimeField on RegisteredTime{
+  id
+  timeRegistered
+  published_at
+  user{
+    id
+    name
+  }
+}

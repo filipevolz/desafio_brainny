@@ -1,0 +1,7 @@
+mutation createRegisteredTime($input: createRegisteredTimeInput){
+  createRegisteredTime(input: $input){
+    registeredTime{
+      ...RegisterTimeField
+    }
+  }
+}
