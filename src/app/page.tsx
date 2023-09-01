@@ -64,16 +64,17 @@ export default function Home() {
           modules={[EffectCoverflow, Navigation ]}
         >
           <SwiperSlide>
-            <Image src="/planTrinta.png" />
+            <Image src="/planThirty.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/planCinquenta.png" />
+            <Image src="/planFifty
+            .png" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/planCem.png" />
+            <Image src="/planOneHundred.png" />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src="/planDuzentos.png" />
+            <Image src="/planTwoHundred.png" />
           </SwiperSlide>
         </Swiper>
 
